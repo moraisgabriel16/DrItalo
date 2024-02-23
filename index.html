@@ -35,9 +35,9 @@
         align-items: center;
         flex-direction: column;
         cursor: pointer;
-        transition: transform 0.3s ease;
         overflow: hidden;
         position: relative;
+        transition: transform 0.3s ease;
     }
 
     .card::before {
@@ -54,6 +54,10 @@
 
     .card:hover::before {
         opacity: 0.9;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
     }
 
     .card h2 {
@@ -77,11 +81,11 @@
 </head>
 <body>
 <div class="container">
-    <div class="card" onclick="window.location.href='teladentista.html'">
+    <div class="card" onclick="window.location.href='./pages/teladentista.html'">
         <h2>Sou Dentista</h2>
         <p>Quero trabalhar com Odontologia Digital</p>
     </div>
-    <div class="card" onclick="window.location.href='telapaciente.html'">
+    <div class="card" onclick="window.location.href='./pages/telapaciente.html'">
         <h2>Sou Paciente</h2>
         <p>Quero ser paciente</p>
     </div>
